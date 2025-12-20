@@ -84,7 +84,7 @@ const HomePage = () => (
                     </div>
                   </div>
 
-                  <p className="text-sm text-gray-600 leading-relaxed">
+                  <p className="text-sm text-gray-600 leading-relaxed dm-serif-text-regular-italic">
                     “This is a nice property. Awesome property for living with
                     an awesome family. Thanks SMART-CITIES-INFRA team for provide this
                     service.”
@@ -194,7 +194,7 @@ const HomePage = () => (
 
 
     {/* Services Overview */}
-    <section className="py-20 bg-white relative">
+    <section className="py-20 bg-white relative text-start">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="text-center mb-16">
@@ -279,7 +279,7 @@ const HomePage = () => (
     </section>
 
     {/* Why Choose Us */}
-    <section className="py-20 bg-gradient-to-br from-blue-50 to-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-blue-50 to-white relative overflow-hidden text-start">
       <ParallaxSection speed={0.2}>
         <div className="absolute top-10 right-10 w-64 h-64 bg-blue-100 rounded-full opacity-20"></div>
       </ParallaxSection>

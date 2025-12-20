@@ -70,7 +70,7 @@ import AISolutionsPage from './services/safety/AISolutionsPage';
 
 function App() {
   return (
-    <div className="font-sans">
+    <div >
       <Navbar />
       
       <Router>
