@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRight, Radio, Database, Wifi, BarChart3, Cloud, Building, Users, TrendingUp, Cpu } from 'lucide-react';
+import { ChevronRight, Radio, Database, Wifi, BarChart3, Cloud, Building, Users, TrendingUp, Cpu, Zap } from 'lucide-react';
 import Link from '../../utils/Link';
 import FadeIn from '../../components/FadeIn';
 
@@ -13,6 +13,7 @@ const SoftwareServicesPage = () => {
     { name: 'Cloud Services / Virtualization', link: '/service/cloud', icon: Cloud, color: 'bg-sky-500' },
     { name: 'Real Estate Management', link: '/service/real-estate-mgmt', icon: Building, color: 'bg-orange-500' },
     { name: 'Attendance / Time / HR', link: '/service/hr-systems', icon: Users, color: 'bg-pink-500' },
+    { name: 'Electrical Management', link: '/service/electrical-mgmt', icon: Zap, color: 'bg-lime-500' },
     { name: 'Tenant-Facing Services', link: '/service/tenant-services', icon: Users, color: 'bg-teal-500' },
     { name: 'Logistics and Distribution', link: '/service/logistics', icon: TrendingUp, color: 'bg-red-500' },
     { name: 'Robotics', link: '/service/robotics', icon: Cpu, color: 'bg-gray-600' },
@@ -21,7 +22,7 @@ const SoftwareServicesPage = () => {
 
   return (
     <div className="min-h-screen pt-24 pb-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 mt-10 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="mb-12">
             <Link to="/services" className="text-blue-600 hover:text-blue-700 flex items-center mb-4 group">

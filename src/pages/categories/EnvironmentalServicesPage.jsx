@@ -15,7 +15,7 @@ const EnvironmentalServicesPage = () => {
 
   return (
     <div className="min-h-screen pt-24 pb-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto mt-10 px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="mb-12">
             <Link to="/services" className="text-blue-600 hover:text-blue-700 flex items-center mb-4 group">

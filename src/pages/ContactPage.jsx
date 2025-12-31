@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import FadeIn from '../components/FadeIn';
+import SEO from '../components/SEO';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
@@ -42,7 +43,15 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen pt-24 pb-20 bg-gray-50 ">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* contact page SEO */}
+      <SEO 
+         title="Smart Cities Infra - Contact Us"
+          description="Get in touch with Smart Cities Infra for inquiries, support, or to learn more about our smart building solutions and services."
+          keywords="contact smart cities infra, smart building solutions, infrastructure inquiries, customer support, smart city services"
+          type="website"   
+       />
+       {/* ---------------- */}
+      <div className="max-w-7xl mx-auto px-4 mt-10 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-gray-900 mb-4">Contact Us</h1>
@@ -99,7 +108,7 @@ const ContactPage = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full bg-blue-6900 text-white py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${
+                  className={`w-full bg-blue-600 text-white py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${
                     isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-800'
                   }`}
                 >

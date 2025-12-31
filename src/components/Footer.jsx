@@ -1,13 +1,17 @@
 import React from 'react';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, ImageOff } from 'lucide-react';
 import Link from '../utils/Link';
+import Logo from '../assets/Logo.png';
 
 const Footer = () => (
   <footer className="bg-gray-900 text-white text-start py-12">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
+          <div className='flex items-center'>
+          <img src={Logo} alt="Smart Cities Infra" className="h-12 w-11 mb-4" />
           <h3 className="text-xl font-bold mb-4">SMART CITIES INFRA</h3>
+          </div>
           <p className="text-gray-400">
             Transforming infrastructure for better living through innovative solutions.
           </p>

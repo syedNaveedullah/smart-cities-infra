@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, createContext, useContext } from "react";
+
+const LocationContext = createContext({ pathname: "/" });
 
 const Router = ({ children }) => {
   const [currentPath, setCurrentPath] = useState(
@@ -21,5 +23,10 @@ const Router = ({ children }) => {
 };
 
 export const Route = ({ component: Component }) => <Component />;
+
+// ✅ ADD THIS
+export const useLocation = () => {
+  return useContext(LocationContext);
+};
 
 export default Router;

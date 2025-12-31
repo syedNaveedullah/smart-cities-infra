@@ -1,10 +1,19 @@
 import React from 'react';
 import { MapPin, Cpu, Star, Users } from 'lucide-react';
 import FadeIn from '../components/FadeIn';
+import SEO from '../components/SEO';
 
 const AboutPage = () => (
   <div className="min-h-screen pt-24 pb-20">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {/* about page SEO */}
+    <SEO
+        title="Smart Cities Infra - About Us"
+        description="Learn about Smart Cities Infra's mission, vision, and core values as a leading provider of smart infrastructure solutions."
+        keywords="about smart cities infra, smart infrastructure solutions, company mission, vision and values, smart city technology provider"
+        type="website"
+      />
+    {/* ---------------- */}
+    <div className="max-w-7xl mx-auto px-4 mt-10 sm:px-6 lg:px-8">
       <FadeIn>
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">About Smart Cities Infra</h1>

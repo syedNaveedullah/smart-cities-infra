@@ -26,7 +26,7 @@ const ServiceDetailTemplate = ({
 
   return (
     <div className="min-h-screen pt-24 pb-20">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 mt-10 sm:px-6 lg:px-8">
         <FadeIn>
           <Link to={backLink} className="text-blue-600 hover:text-blue-700 flex items-center mb-6 group">
             <ChevronRight size={20} className="transform rotate-180 group-hover:-translate-x-1 transition-transform" /> 

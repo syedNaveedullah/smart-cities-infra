@@ -3,120 +3,127 @@ import { ArrowRight, Star, Building, Wind, Cpu, Sun, Shield, Activity, Zap, User
 import Link from '../utils/Link';
 import FadeIn from '../components/FadeIn';
 import ParallaxSection from '../components/ParallaxSection';
+import SEO from '../components/SEO'
 import CountUp from '../components/CountUp';
 import GIF from "../assets/city.gif";
 import MAIN from "../assets/main2.jpg";
 import Img1 from "../assets/review1.png";
 import Img2 from "../assets/review2.jpg";
+import BgImg from "../assets/city3.jpg";
 
 const HomePage = () => (
   <div className="min-h-screen pt-8">
+     <SEO 
+        title="Smart Cities Infra - Smart Building Solutions & IoT Infrastructure"
+        description="Transform your buildings with cutting-edge smart solutions. We offer building automation, energy management, safety systems, and IoT infrastructure for modern cities."
+        keywords="smart cities, smart buildings, IoT, building automation, energy management, facility management, HVAC, building safety"
+        type="website"
+      />
     {/* Hero Section with Parallax */}
-    <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-blue-50  to-blue-50 overflow-hidden ps-10">
+    {/* Hero Section */}
+    <section className="relative min-h-screen flex items-center mb-4 bg-gradient-to-br from-blue-50 to-blue-50 overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
-      <div className="w-full px-10 pt-8 mx-auto z-10">
+      <div className="w-full px-6 sm:px-10 lg:px-20 pt-24 z-10">
         <FadeIn>
-          <main className="flex flex-col gap-2 ">
-            {/* ---------------------1--------------------------------------- */}
-            <div className="w-full flex flex-row items-center ps-10 py-4">
-              {/* a */}
-              <div className="w-[50%] ps-10 py-2  text-start">
-                {/* a1 */}
-                <div className="flex flex-row  items-center gap-4 mb-3">
-                  {/* text */}
-                  <div>
-                    <p className="text-7xl mr-4 text-blue-900">Experience</p>
-                  </div>
-                  {/* image */}
-                  <div>
-                    <img
-                      src={GIF}
-                      alt="Experience"
-                      className="w-45 h-20 object-cover mt-6 shadow-lg mx-auto"
-                    />
-                  </div>
+          <main className="flex flex-col gap-16">
+            {/* ===================== ROW 1 ===================== */}
+            <div className="flex flex-col lg:flex-row items-center gap-10">
+              {/* LEFT TEXT */}
+              <div className="w-full lg:w-1/2 text-left">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-4">
+                  <p className="text-4xl sm:text-5xl lg:text-7xl text-blue-900">
+                    Experience
+                  </p>
+
+                  <img
+                    src={GIF}
+                    alt="Experience"
+                    className="w-32 sm:w-40 h-auto object-contain mt-2 sm:mt-6 shadow-lg"
+                  />
                 </div>
-                {/* a2 */}
-                <div>
-                  <p className="text-7xl text-blue-900">Hassle-free Living</p>
-                </div>
+
+                <p className="text-4xl sm:text-5xl lg:text-7xl text-blue-900">
+                  Hassle-free Living
+                </p>
               </div>
-              {/* b */}
-              <div className="w-[40%] flex flex-col justify-start items-start text-start px-6 py-8">
-                <p className="text-sm mr-4 text-blue-800 mb-4">
+
+              {/* RIGHT DESCRIPTION */}
+              <div className="w-full lg:w-2/5 text-left">
+                <p className="text-sm sm:text-base text-blue-800 mb-6">
                   Smart Cities Infra offers the expertise of industry-certified
                   professionals who deliver solutions in compliance with
                   industrial standards and norms, continuously striving to
                   achieve excellence for our customers.
                 </p>
+
                 <Link
                   to="/services"
-                  className="bg-black text-white px-8 py-4 hover:bg-gray-800 transition-all transform hover:scale-105 hover:shadow-xl font-semibold flex items-center justify-center group">
+                  className="inline-flex bg-black text-white px-6 py-3 hover:bg-gray-800 transition-all transform hover:scale-105 hover:shadow-xl font-semibold">
                   Explore Services
                 </Link>
               </div>
             </div>
 
-            {/* ---------------------2--------------------------------------- */}
-            <div className="w-full flex flex-row items-center gap-12 px-20 py-4">
-              {/* a */}
-              <div className='w-[40%] ms-10'>
-              <div className="w-[80%] flex flex-col p-4 border-1 border-gray-300 justify-center items-center text-center">
-                {/* 1️⃣ Rating Row */}
-                <div className="w-full flex items-center border-b pb-2 border-gray-300 justify-start gap-2">
-                  <span className="text-yellow-400 text-lg"><Star fill="currentColor" /></span>
-                  <span className="font-semibold text-gray-800">4.8</span>
-                  <span className="text-sm text-gray-500">Review Ratings</span>
-                </div>
-
-                {/* 2️⃣ Review Content */}
-                <div className="w-full p-4 mb-4 text-left">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-xs font-semibold">
-                      NA
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-gray-800">
-                        Nur Alam Khan
-                      </p>
-                      <p className="text-xs text-gray-500">Customer</p>
-                    </div>
+            {/* ===================== ROW 2 ===================== */}
+            <div className="flex flex-col lg:flex-row items-center gap-14">
+              {/* REVIEW CARD */}
+              <div className="w-full lg:w-2/5 flex justify-center">
+                <div className="w-full sm:w-[85%] bg-white p-4 border border-gray-300">
+                  {/* Rating */}
+                  <div className="flex items-center gap-2 border-b pb-2 mb-4">
+                    <span className="text-yellow-400">
+                      <Star fill="currentColor" />
+                    </span>
+                    <span className="font-semibold">4.8</span>
+                    <span className="text-sm text-gray-500">
+                      Review Ratings
+                    </span>
                   </div>
 
-                  <p className="text-sm text-gray-600 leading-relaxed dm-serif-text-regular-italic">
-                    “This is a nice property. Awesome property for living with
-                    an awesome family. Thanks SMART-CITIES-INFRA team for provide this
-                    service.”
-                  </p>
-                </div>
+                  {/* Review */}
+                  <div className="mb-4">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-xs font-semibold">
+                        NA
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold">Nur Alam Khan</p>
+                        <p className="text-xs text-start text-gray-500">
+                          Customer
+                        </p>
+                      </div>
+                    </div>
 
-                {/* 3️⃣ Image Thumbnails */}
-                <div className="w-full flex gap-4">
-                  <div className="w-1/2 h-24 bg-gray-200 rounded-md overflow-hidden">
+                    <p className="text-sm text-gray-600 italic leading-relaxed">
+                      “This is a nice property. Awesome property for living with
+                      an awesome family. Thanks SMART-CITIES-INFRA team for
+                      providing this service.”
+                    </p>
+                  </div>
+
+                  {/* Thumbnails */}
+                  <div className="flex gap-4">
                     <img
                       src={Img1}
                       alt="Building 1"
-                      className="w-full h-full object-cover"
+                      className="w-1/2 h-24 object-cover"
                     />
-                  </div>
-                  <div className="w-1/2 h-24 bg-gray-200 rounded-md overflow-hidden">
                     <img
                       src={Img2}
                       alt="Building 2"
-                      className="w-full h-full object-cover"
+                      className="w-1/2 h-24 object-cover"
                     />
                   </div>
                 </div>
               </div>
-              </div>
 
-              {/* b */}
-              <div className="w-[40%] ms-10">
+              {/* MAIN IMAGE */}
+              <div className="w-full lg:w-1/2 flex justify-center">
                 <img
                   src={MAIN}
                   alt="Innovation"
-                  className="w-full h-80 object-contain mx-auto"
+                  className="w-full max-w-lg h-auto object-contain"
                 />
               </div>
             </div>
@@ -125,8 +132,7 @@ const HomePage = () => (
       </div>
     </section>
 
-
-        {/* Stats Section */}
+    {/* Stats Section */}
     <section className="py-20 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern"></div>
@@ -171,27 +177,37 @@ const HomePage = () => (
     </section>
 
     {/* Section 2 with Parallax */}
-    <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-blue-50  to-blue-50 overflow-hidden">
-      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      {/* 🔹 Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${BgImg})` }}
+      />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+      {/* 🔹 Dark Overlay (for readability) */}
+      <div className="absolute inset-0 bg-black/40"></div>
+
+      {/* 🔹 Grid Pattern (optional) */}
+      <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+
+      {/* 🔹 Content */}
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
         <FadeIn>
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
             Transforming For{" "}
-            <span className="text-blue-900 relative inline-block">
+            <span className="relative inline-block">
               Better Living
-              <span className="absolute bottom-0 left-0 w-full h-3 bg-blue-200 -z-10"></span>
+              <span className="absolute bottom-0 left-0 w-full h-3 bg-blue-500/40 -z-10"></span>
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+
+          <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
             Smart building solutions and services for modern infrastructure
             management
           </p>
         </FadeIn>
       </div>
     </section>
-
-
 
     {/* Services Overview */}
     <section className="py-20 bg-white relative text-start">
@@ -239,12 +255,6 @@ const HomePage = () => (
               desc: "Comprehensive security solutions",
               link: "/services/safety",
               icon: Shield,
-            },
-            {
-              title: "Healthcare Services",
-              desc: "Medical equipment and supplies",
-              link: "/service/healthcare",
-              icon: Activity,
             },
             {
               title: "Electrical Management",

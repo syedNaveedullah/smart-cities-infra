@@ -5,31 +5,33 @@ import ServiceDetailTemplate from '../ServiceDetailTemplate';
 const ElectricalMgmtPage = () => (
   <ServiceDetailTemplate
     title="Electrical Management"
-    description="Complete electrical system solutions for efficient and reliable power management"
+    description="End-to-end electrical infrastructure and transformer management for safe, reliable power delivery"
     icon={Zap}
     color="orange"
     backLink="/services/environmental"
     features={[
+      'Transformer management (50kVA to 5000kVA)',
+      'Site assessment & electrical load calculations',
+      'Transformer installation & commissioning',
+      'Substation design & construction',
+      'Preventive electrical maintenance programs',
+      'Emergency electrical repair services',
       'Power distribution monitoring',
-      'Circuit-level energy tracking',
-      'Power quality analysis',
-      'Load balancing and optimization',
-      'Preventive maintenance scheduling',
       'Compliance and safety monitoring'
     ]}
     benefits={[
-      'Prevent electrical failures and downtime',
-      'Reduce energy waste by 15-25%',
-      'Ensure electrical safety compliance',
-      'Extended equipment lifespan',
-      'Lower maintenance costs',
-      'Improved power reliability'
+      'Reduced risk of transformer and system failures',
+      'Improved power reliability for critical operations',
+      'Extended transformer and equipment lifespan',
+      'Lower unplanned downtime',
+      'Regulatory and electrical safety compliance',
+      'Fast response during electrical emergencies'
     ]}
     useCases={[
-      { title: 'Commercial Buildings', description: 'Monitor and optimize electrical systems' },
-      { title: 'Industrial Facilities', description: 'Manage high-power equipment safely' },
-      { title: 'Data Centers', description: 'Ensure power quality and redundancy' },
-      { title: 'Healthcare', description: 'Critical power system reliability' }
+      { title: 'Commercial Buildings', description: 'Reliable transformer and power distribution systems' },
+      { title: 'Industrial Facilities', description: 'Safe operation of high-capacity electrical infrastructure' },
+      { title: 'Data Centers', description: 'High-reliability power and substation solutions' },
+      { title: 'Healthcare Facilities', description: 'Critical electrical systems with zero tolerance for downtime' }
     ]}
   />
 );

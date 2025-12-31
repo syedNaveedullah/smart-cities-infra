@@ -7,10 +7,20 @@ import environmental from '../assets/environmental.png';
 import software from '../assets/software.png';
 import lighting from '../assets/lighting.png';
 import security from '../assets/security.png';
+import SEO from '../components/SEO';
 
 const ServicesPage = () => (
   <div className="min-h-screen pt-24 pb-20">
+    {/* services page SEO */}
+    <SEO 
+       title="Smart Cities Infra - Services"
+       description="Explore our comprehensive range of smart building solutions and services, including building management, environmental controls, software services, lighting solutions, and safety & security systems."   
+       keywords="smart building services, environmental controls, software services, lighting solutions, safety and security, building management systems, energy management"  
+       type="website"
+     />
+     {/* ---------------- */}
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto px-4 mt-10 sm:px-6 lg:px-8">
 
       {/* PAGE HEADER */}
       <FadeIn>
@@ -108,6 +118,7 @@ const ServicesPage = () => (
         ))}
       </div>
     </div>
+  </div>
   </div>
 );
 

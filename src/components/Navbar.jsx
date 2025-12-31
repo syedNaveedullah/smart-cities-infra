@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import Link from '../utils/Link';
+import Logo from '../assets/Logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,8 +22,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="text-2xl font-bold text-blue-900 transition-all duration-300 group-hover:scale-105">
+            <div className="flex justify-center items-center text-2xl font-bold text-blue-900 transition-all duration-300 group-hover:scale-105">
+              <div>
+              <img src={Logo} alt="Smart Cities Infra Logo" className="h-15 w-15 object-contain" />
+              </div>
+              <div>
               SMART CITIES <span className="text-blue-600">INFRA</span>
+              </div>
             </div>
           </Link>
 
