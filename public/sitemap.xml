@@ -1,35 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://yourwebsite.com/</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://smartcitiesinfra.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
   <url>
-    <loc>https://yourwebsite.com/services</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://smartcitiesinfra.com/services</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
-    <loc>https://yourwebsite.com/about</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://smartcitiesinfra.com/about</loc>
   </url>
+
   <url>
-    <loc>https://yourwebsite.com/contact</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://smartcitiesinfra.com/contact</loc>
   </url>
-  <!-- Add all your service pages here -->
-  <url>
-    <loc>https://yourwebsite.com/services/building</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <!-- Continue for all pages... -->
+
+  <url><loc>https://smartcitiesinfra.com/services/building</loc></url>
+  <url><loc>https://smartcitiesinfra.com/services/environmental</loc></url>
+  <url><loc>https://smartcitiesinfra.com/services/software</loc></url>
+  <url><loc>https://smartcitiesinfra.com/services/lighting</loc></url>
+  <url><loc>https://smartcitiesinfra.com/services/safety</loc></url>
+
+  <url><loc>https://smartcitiesinfra.com/service/water-management</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/elevators</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/generators</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/ventilation</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/occupancy</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/hvac</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/asset-utilization</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/parking</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/air-quality</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/equipment-monitoring</loc></url>
+
+  <url><loc>https://smartcitiesinfra.com/service/energy-metering</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/energy-storage</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/load-sharing</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/bems</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/electrical-mgmt</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/pollution</loc></url>
+
+  <url><loc>https://smartcitiesinfra.com/service/erp-crp</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/cloud</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/audiovisual</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/mobility</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/connectivity</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/big-data</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/real-estate-mgmt</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/hr-systems</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/tenant-services</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/logistics</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/robotics</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/industrial</loc></url>
+
+  <url><loc>https://smartcitiesinfra.com/service/lighting-controls</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/emergency-lighting</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/general-lighting</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/digital-signage</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/daylight-harvesting</loc></url>
+
+  <url><loc>https://smartcitiesinfra.com/service/access-control</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/video-surveillance</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/fire-system</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/mass-notification</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/voice-evacuation</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/intrusion-detection</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/m2m</loc></url>
+  <url><loc>https://smartcitiesinfra.com/service/ai-solutions</loc></url>
+
 </urlset>
