@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import FadeIn from '../components/FadeIn';
 import SEO from '../components/SEO';
+import emailjs from '@emailjs/browser';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
@@ -15,13 +16,12 @@ const ContactPage = () => {
 
     try {
       // EmailJS configuration - Replace with your actual credentials
-      // const serviceId = 'YOUR_SERVICE_ID';
-      // const templateId = 'YOUR_TEMPLATE_ID';
-      // const publicKey = 'YOUR_PUBLIC_KEY';
+      const serviceId = 'service_cz549nn';
+      const templateId = 'template_2x0q6o4';
+      const publicKey = 'NV8k1cCjDACXSLCBl';
       
       // Uncomment below when EmailJS is configured:
-      // import emailjs from '@emailjs/browser';
-      // await emailjs.send(serviceId, templateId, formData, publicKey);
+      await emailjs.send(serviceId, templateId, formData, publicKey);
       
       // Simulated email sending
       await new Promise(resolve => setTimeout(resolve, 1000));
