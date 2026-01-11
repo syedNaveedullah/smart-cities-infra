@@ -104,7 +104,7 @@ const AboutPage = () => (
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
             <div>
-              <div className="text-3xl font-bold mb-2">100+</div>
+              <div className="text-3xl font-bold mb-2">80+</div>
               <div className="text-sm opacity-90">Projects Completed</div>
             </div>
             <div>

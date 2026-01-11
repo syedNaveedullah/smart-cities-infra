@@ -35,6 +35,7 @@ import EnergyStoragePage from './services/environmental/EnergyStoragePage';
 import LoadSharingPage from './services/environmental/LoadSharingPage';
 import BEMSPage from './services/environmental/BEMSPage';
 import ElectricalMgmtPage from './services/environmental/ElectricalMgmtPage';
+import CommercialEVChargingPage from './services/environmental/EVPage';
 import PollutionPage from './services/environmental/PollutionPage';
 
 // Software Services Detail Pages
@@ -105,6 +106,7 @@ function App() {
         <Route path="/service/load-sharing" component={LoadSharingPage} />
         <Route path="/service/bems" component={BEMSPage} />
         <Route path="/service/electrical-mgmt" component={ElectricalMgmtPage} />
+        <Route path="/service/commercial-ev-charging" component={CommercialEVChargingPage} />
         <Route path="/service/pollution" component={PollutionPage} />
         
         {/* Software Services Detail Pages */}

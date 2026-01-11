@@ -10,7 +10,7 @@ const ElectricalMgmtPage = () => (
     color="orange"
     backLink="/services/environmental"
     features={[
-      'Transformer management (50kVA to 5000kVA)',
+      'Transformer management (25kVA to 500kVA)',
       'Site assessment & electrical load calculations',
       'Transformer installation & commissioning',
       'Substation design & construction',

@@ -31,6 +31,7 @@ const Footer = () => (
             <li><Link to="/services/building" className="text-gray-400 hover:text-white transition-colors">Building Services</Link></li>
             <li><Link to="/services/environmental" className="text-gray-400 hover:text-white transition-colors">Environmental Controls</Link></li>
             <li><Link to="/services/software" className="text-gray-400 hover:text-white transition-colors">Software Services</Link></li>
+            <li><Link to="/services/lighting" className="text-gray-400 hover:text-white transition-colors">Lighting Solutions</Link></li>
             <li><Link to="/services/safety" className="text-gray-400 hover:text-white transition-colors">Safety & Security</Link></li>
           </ul>
         </div>
@@ -47,7 +48,7 @@ const Footer = () => (
             </li>
             <li className="flex items-center">
               <Mail size={18} className="mr-2 flex-shrink-0" />
-              <span>smartcitiesinfra@gmail.com</span>
+              <span>info@smartcitiesinfra.com</span>
             </li>
           </ul>
         </div>

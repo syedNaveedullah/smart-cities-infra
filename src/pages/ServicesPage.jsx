@@ -50,7 +50,7 @@ const ServicesPage = () => (
           {
             title: 'Environmental Controls & Energy Management',
             link: '/services/environmental',
-            items: 6,
+            items: 7,
             icon: Wind,
             image: environmental,
             description: 'Energy metering, BEMS, and sustainability solutions'

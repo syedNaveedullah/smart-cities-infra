@@ -5,7 +5,7 @@ import SEO from '../components/SEO';
 import emailjs from '@emailjs/browser';
 
 const ContactPage = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', subject: '', message: '' });
   const [status, setStatus] = useState({ type: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -16,7 +16,7 @@ const ContactPage = () => {
 
     try {
       // EmailJS configuration - Replace with your actual credentials
-      const serviceId = 'service_cz549nn';
+      const serviceId = 'service_vf4jkho';
       const templateId = 'template_2x0q6o4';
       const publicKey = 'NV8k1cCjDACXSLCBl';
       
@@ -30,7 +30,7 @@ const ContactPage = () => {
         type: 'success', 
         message: 'Thank you! Your message has been sent successfully. We will get back to you soon.' 
       });
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
     } catch (error) {
       setStatus({ 
         type: 'error', 
@@ -81,6 +81,18 @@ const ContactPage = () => {
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-gray-700 font-semibold mb-2">
+                    Phone Number *
+                  </label>
+                  <input
+                    type="phone"
+                    value={formData.phone}
+                    onChange={(e) =>setFormData({ ...formData, phone: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
                     required
                   />
@@ -159,7 +171,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1 text-lg">Email</h3>
-                      <p className="text-gray-600">smartcitiesinfra@gmail.com</p>
+                      <p className="text-gray-600">info@smartcitiesinfra.com</p>
                     </div>
                   </div>
                 </div>
@@ -176,6 +188,10 @@ const ContactPage = () => {
                   <p className="font-semibold flex items-center">
                     <Phone className="mr-2" size={20} />
                     24/7 Emergency Support Available
+                  </p>
+                  <p className="font-semibold flex items-center">
+                    <Mail className="mr-2" size={20} />
+                    support@smartcitiesinfra.com
                   </p>
                 </div>
               </div>

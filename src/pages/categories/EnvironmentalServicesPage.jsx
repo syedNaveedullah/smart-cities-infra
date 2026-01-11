@@ -1,12 +1,14 @@
 import React from 'react';
-import { ChevronRight, Gauge, Database, TrendingUp, Building, Zap, Wind } from 'lucide-react';
+import { ChevronRight, Gauge, Database, TrendingUp, Building, Zap, PlugZap, Wind } from 'lucide-react';
 import Link from '../../utils/Link';
 import FadeIn from '../../components/FadeIn';
+
 
 const EnvironmentalServicesPage = () => {
   const services = [
     { name: 'Energy Metering', link: '/service/energy-metering', icon: Gauge, color: 'bg-blue-500' },
-    { name: 'Energy Storage', link: '/service/energy-storage', icon: Database, color: 'bg-green-500' },
+    { name: 'Commercial EV Charging', link: '/service/commercial-ev-charging', icon: PlugZap, color: 'bg-green-500' },
+    { name: 'Energy Storage', link: '/service/energy-storage', icon: Database, color: 'bg-pink-500' },
     { name: 'Load Sharing / Demand Response', link: '/service/load-sharing', icon: TrendingUp, color: 'bg-purple-500' },
     { name: 'Building Energy Management System (BEMS)', link: '/service/bems', icon: Building, color: 'bg-indigo-500' },
     { name: 'Electrical Management', link: '/service/electrical-mgmt', icon: Zap, color: 'bg-yellow-500' },

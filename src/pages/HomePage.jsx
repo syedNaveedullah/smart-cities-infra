@@ -13,12 +13,12 @@ import BgImg from "../assets/city3.jpg";
 
 const HomePage = () => (
   <div className="min-h-screen pt-8">
-     <SEO 
-        title="Smart Cities Infra - Smart Building Solutions & IoT Infrastructure"
-        description="Transform your buildings with cutting-edge smart solutions. We offer building automation, energy management, safety systems, and IoT infrastructure for modern cities."
-        keywords="smart cities, smart buildings, IoT, building automation, energy management, facility management, HVAC, building safety"
-        type="website"
-      />
+    <SEO
+      title="Smart Cities Infra | Smart Infrastructure, Energy & Digital Solutions"
+      description="Smart Cities Infra delivers integrated building, energy, electrical, software, lighting, and safety solutions for enterprises, campuses, industries, and smart cities."
+      keywords="smart infrastructure, building automation, energy management, EV charging, electrical systems, IoT, enterprise software, safety systems"
+    />
+
     {/* Hero Section with Parallax */}
     {/* Hero Section */}
     <section className="relative min-h-screen flex items-center mb-4 bg-gradient-to-br from-blue-50 to-blue-50 overflow-hidden">
@@ -51,10 +51,10 @@ const HomePage = () => (
               {/* RIGHT DESCRIPTION */}
               <div className="w-full lg:w-2/5 text-left">
                 <p className="text-sm sm:text-base text-blue-800 mb-6">
-                  Smart Cities Infra offers the expertise of industry-certified
-                  professionals who deliver solutions in compliance with
-                  industrial standards and norms, continuously striving to
-                  achieve excellence for our customers.
+                  Smart Cities Infra delivers end-to-end engineering,
+                  automation, energy, software, and safety solutions that power
+                  intelligent buildings, sustainable environments, and
+                  future-ready infrastructure.
                 </p>
 
                 <Link
@@ -96,9 +96,10 @@ const HomePage = () => (
                     </div>
 
                     <p className="text-sm text-gray-600 italic leading-relaxed">
-                      “This is a nice property. Awesome property for living with
-                      an awesome family. Thanks SMART-CITIES-INFRA team for
-                      providing this service.”
+                      “Smart Cities Infra delivered a seamless integration of
+                      building automation and energy management systems. Their
+                      technical expertise and execution quality exceeded our
+                      expectations.”
                     </p>
                   </div>
 
@@ -142,7 +143,7 @@ const HomePage = () => (
           <FadeIn delay={100}>
             <div className="text-center transform hover:scale-110 transition-transform duration-300">
               <div className="text-4xl md:text-5xl font-bold mb-2">
-                <CountUp end={215} />
+                <CountUp end={15} />
               </div>
               <div className="text-blue-200">Winning Awards</div>
             </div>
@@ -150,7 +151,7 @@ const HomePage = () => (
           <FadeIn delay={200}>
             <div className="text-center transform hover:scale-110 transition-transform duration-300">
               <div className="text-4xl md:text-5xl font-bold mb-2">
-                <CountUp end={780} />
+                <CountUp end={80} />
               </div>
               <div className="text-blue-200">Properties Ready</div>
             </div>
@@ -158,7 +159,8 @@ const HomePage = () => (
           <FadeIn delay={300}>
             <div className="text-center transform hover:scale-110 transition-transform duration-300">
               <div className="text-4xl md:text-5xl font-bold mb-2">
-                <CountUp end={15} suffix="k" />
+                {/* <CountUp end={15} suffix="k" /> */}
+                <CountUp end={150} />
               </div>
               <div className="text-blue-200">Happy Customers</div>
             </div>
@@ -202,8 +204,8 @@ const HomePage = () => (
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
-            Smart building solutions and services for modern infrastructure
-            management
+            Integrated engineering, digital, energy, and safety solutions for
+            smart buildings, enterprises, and cities
           </p>
         </FadeIn>
       </div>
@@ -219,12 +221,13 @@ const HomePage = () => (
             </h2>
             <div className="w-24 h-1 bg-blue-900 mx-auto mb-4"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive solutions across various engineering domains
+              Comprehensive technology and infrastructure services designed to
+              optimize performance, sustainability, and operational efficiency
             </p>
           </div>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
           {[
             {
               title: "Building Services",
@@ -257,15 +260,9 @@ const HomePage = () => (
               icon: Shield,
             },
             {
-              title: "Electrical Management",
-              desc: "Complete electrical system solutions",
-              link: "/service/electrical-mgmt",
-              icon: Zap,
-            },
-            {
-              title: "Real Estate",
-              desc: "Property management services",
-              link: "/service/real-estate-mgmt",
+              title: "Explore All Services",
+              desc: "Diverse solutions for modern infrastructure",
+              link: "/services",
               icon: Users,
             },
           ].map((service, idx) => (
@@ -349,7 +346,8 @@ const HomePage = () => (
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <FadeIn>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Transform Your Infrastructure?
+             Partner with our experts for smart infrastructure design,
+             deployment, and lifecycle support
           </h2>
           <p className="text-xl mb-8 opacity-90">
             Get in touch with our experts today for a consultation
